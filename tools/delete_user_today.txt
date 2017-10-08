@@ -1,0 +1,13 @@
+
+
+select count(*) from answer    where  to_days(created_at) = to_days(now())  and user='haitian';
+select count(*) from question  where  to_days(created_at) = to_days(now())  and user='haitian';
+select count(*) from answer    where  to_days(created_at) = to_days(now())  and user='boyan';
+select count(*) from question  where  to_days(created_at) = to_days(now())  and user='boyan';
+
+
+
+delete  from answer    where  to_days(created_at) = to_days(now())  and user='haitian';
+delete  from question  where  to_days(created_at) = to_days(now())  and user='haitian';
+delete  from answer    where  to_days(created_at) = to_days(now())  and user='boyan';
+delete  from question  where  to_days(created_at) = to_days(now())  and user='boyan';

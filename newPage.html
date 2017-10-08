@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Head </title>
+	
+	<script src="jquery-2.2.0.min.js"></script>
+	<script type="text/javascript"> 
+	$(document).ready(function(){
+	  $("li#manu_qa").mouseover(function(){
+		$(".sub_item").slideDown("slow");
+	  });
+
+	  $("li#manu_qa").mouseleave(function(){
+		$(".sub_item").slideUp("slow");
+	  });
+	});
+	</script>
+
+  <style type="text/css">
+	#nav li.item {  
+	height:48px;
+	line-height:48px;
+    list-style-type: none;    
+    display: inline;
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:-1px;
+	float:left;
+	font-size:20px;
+	color:#85888D;
+	border: solid 1px #85888d;
+	}
+
+	#nav li.item:hover{
+		background-color: #b36ae2;
+		color:#ffffff;
+		list-style-type: none;
+	}
+
+	#nav li.sub_item {  
+	height:48px;
+	width:100%;
+	line-height:48px;
+    list-style-type: none;
+	padding-left:20px;
+	padding-right:20px;
+	float:top;
+	font-size:20px;
+	color:#ffffff;
+	background-color: #b36ae2;
+	border: solid 1px #85888d;
+	margin:0;
+	display:none;
+	}
+
+	ul.manu_qa_sub{
+	
+	}
+	
+	#nav ul.l1{
+	background-color: #525659;
+	height: 50px;
+	}
+
+  </style>
+ </head>
+
+ <body>
+	<div id="nav">
+		<ul class = "l1">
+			<li id = "manu_qa" class="item">人工输入QA
+				<ul id = "manu_qa_sub">
+					<li class="sub_item">Single-turn QA</li>
+					<li class="sub_item">Multi-turn QA</li>
+				</ul>
+			</li>
+			<li class="item">微博Question源</li>
+			<li class="item">豆瓣Question源</li>
+			<li class="item">知乎Question源</li>
+			<li class="item">其他</li>
+		</ul>
+	</div>
+  
+ </body>
+</html>
